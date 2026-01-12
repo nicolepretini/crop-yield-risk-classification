@@ -101,6 +101,9 @@ Key observations:
 - Group-aware validation is essential in country–year panel data
 - Simple, interpretable models can perform well under strict evaluation
 - Risk framing is often more actionable than point prediction
+- - Careful data availability assessment is as critical as model selection in
+large-scale applied risk modeling.
+
 
 ---
 
@@ -108,6 +111,24 @@ Key observations:
 - No climate or management variables included
 - Structural breaks and extreme events are not explicitly modeled
 - Risk threshold selection is application-dependent
+
+---
+
+## Climate Data Considerations
+
+Climate variables were considered as potential predictors of low-yield risk.
+However, globally consistent country–year climate datasets with sufficient
+coverage were not available within the scope of this project.
+
+Preliminary climate data sources either:
+- had limited country coverage, or
+- resulted in substantial sample size reduction when merged with FAOSTAT yields
+
+To preserve statistical power and avoid biased evaluation, climate features were
+intentionally excluded from the final model.
+
+Future extensions of this work will integrate large-scale climate reanalysis
+products (e.g. ERA5 or CRU) aggregated at the country level.
 
 ---
 
